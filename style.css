@@ -1,5 +1,6 @@
 body {
 	font-family: Roboto, sans-serif;
+	margin: 0;
 }
 
 button {
@@ -109,17 +110,24 @@ ul {
 
 .big-container {
 	display: flex;
-	gap: 50px;
 	justify-content: center;
 	align-items: center;
+	gap: 50px;
 	margin-bottom: 75px;
 }
 
 .information .container {
-	width: 150px;
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: auto;
 }
 
-.container .subtext {
+.information .container .subtext {
+	max-width: 150px;
+	margin-top: 8px;
 	text-align: center;
 }
 
@@ -127,7 +135,7 @@ ul {
 	border: 4px solid #3882F6;
 	width: 140px;
 	height: 140px;
-	border-radius: 12px;
+	border-radius: 8px;
 }
 
 .quote {
@@ -136,6 +144,10 @@ ul {
 	justify-content: center;
 	align-items: center;
 	padding: 75px 175px;
+}
+
+.quote .container {
+	max-width: 900px;
 }
 
 .quote .text {
@@ -153,10 +165,26 @@ ul {
 
 .action {
 	margin: 75px 150px;
-	padding: 30px 100px;
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: none;
+}
+
+.action .container{
+	padding: 50px 100px;
+	display: flex;
+	width: 950px;
+	max-height: 150px;
 	justify-content: space-between;
 	align-items: center;
+	flex: none;
+}
+
+.action .left {
+	display: flex;
+	flex-direction: column;
+	flex: auto;
 }
 
 .action .text {
@@ -166,6 +194,7 @@ ul {
 
 .action .subtext {
 	color: #E5E7EB;
+	text-align: start;
 }
 
 .action button {
@@ -173,7 +202,7 @@ ul {
 }
 
 button,
-.action {
+.action .container{
 	background-color: #3882F6;
 	border-radius: 6px;
 }
