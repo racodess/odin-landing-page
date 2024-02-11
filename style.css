@@ -36,6 +36,7 @@ ul {
 }
 
 .header {
+	padding-top: 16px;
 	display:flex;
 	justify-content: space-between;
 }
