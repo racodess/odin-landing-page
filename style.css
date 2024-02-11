@@ -81,11 +81,13 @@ ul {
 	display: flex;
 	justify-content: space-between;
 	align-items: stretch;
+	flex: none;
 }
 
 .hero-content .image {
 	background-color: #6d747d;
 	width: 500px;
+	height: 250px;
 	margin-left: 50px;
 	display: flex;
 	justify-content: center;
